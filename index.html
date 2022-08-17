@@ -5,38 +5,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FakeZone</title>
+    <title>password Generator</title>
     <link rel="stylesheet" href="style.css">
-
 </head>
 
-<body class="body1">
+<body>
     <div class="container">
-        <div class="form-container">
-            <div class="logo">
-                <h1 href="#" class="text-link" data-link-text="Zone">
-                    <span>Fake</span>
-                </h1>
-            </div>
-            <div class="form">
-                <h2>Sign Up</h2>
-                <form action="" class="form-content">
-                    <input class="input" type="text" placeholder="username" id="username">
-                    <input class="input" type="email" placeholder="email" id="email">
-                    <input class="input" type="password" placeholder="password" id="password">
-                    <button class="input-button" type="button" onclick="onSignUP()">submit</button>
-                </form>
+        <div class="key"><img src="assets/deleece-cook-_b8-ZOdA-0c-unsplash.jpg" alt=""></div>
+        <div class="input">
+            <h1>PASSWORD GENERATOR</h1>
+            <div class="label">
+                <label for="passwordLength">PASSWORD LENGTH</label>
+                <input type="number" class="form" id="passwordLength">
+                <label for="password">PASSWORD</label>
+                <input class="form" id="password" disabled>
+                <button onclick="getPassword()" class="btn">GENERATE PASSWORD</button>
+                <a id="saveButton" onclick="savePassword()" class="btn2">SAVE PASSWORD</a>
             </div>
         </div>
-        <div class="signin-container">
-            <div class="signin-button">
-                <button><a href="login.html">sign in</a></button>
-            </div>
-        </div>
-    </div>
-    
-    <script type="application/javascript" src="script.js" ></script>
 
+    </div>
+    <script src="index.js"></script>
 </body>
 
 </html>
